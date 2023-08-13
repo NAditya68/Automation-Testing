@@ -14,12 +14,12 @@ public class FileUpload {
 		driver.get("https://demo.guru99.com/test/upload/#google_vignette");
 		driver.findElement(By.id("uploadfile_0")).sendKeys("/home/aditya/test.txt");
 		driver.findElement(By.id("submitbutton")).click();
-		// String result = driver.findElement(By.id("res")).getText();
-		List<WebElement> buttons = driver.findElements(By.id("res"));
-		for (int i = 0; i < buttons.size(); i++) {
-			String string = buttons.get(i).getText();
-			System.out.println(string);
-		}
+		// // String result = driver.findElement(By.id("res")).getText();
+		// List<WebElement> buttons = driver.findElements(By.id("res"));
+		// for (int i = 0; i < buttons.size(); i++) {
+		// 	String string = buttons.get(i).getText();
+		// 	System.out.println(string);
+		// }
 		System.out.println("done");
 		driver.close();
 
